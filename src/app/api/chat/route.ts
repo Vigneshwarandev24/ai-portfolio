@@ -1,7 +1,5 @@
 import OpenAI from 'openai';
 
-export const runtime = "edge";
-
 export async function POST(req: Request) {
   try {
     const { messages } = await req.json();
@@ -47,7 +45,7 @@ export async function POST(req: Request) {
       },
     });
 
-    console.log("Making request to OpenRouter API...");
+    console.log("Making request to OpenRouter API with DeepSeek model...");
     
     const completion = await openai.chat.completions.create({
       model: 'deepseek/deepseek-chat-v3-0324:free',
@@ -88,7 +86,7 @@ export async function POST(req: Request) {
         errorMessage = "Rate limit exceeded. Please try again later.";
         statusCode = 429;
       } else if (error.message.includes("404")) {
-        errorMessage = "Model not found. Please check the model ID.";
+        errorMessage = "DeepSeek model is currently unavailable. Please try again later.";
         statusCode = 404;
       } else if (error.message.includes("400")) {
         errorMessage = "Invalid request. Please check the request format.";
