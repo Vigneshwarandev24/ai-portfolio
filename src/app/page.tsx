@@ -5,7 +5,7 @@ export default function Home() {
     <main className="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 px-4 text-center">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gray-900 dark:text-white">
-          Hi, I'm <span className="text-blue-600 dark:text-blue-400">Vigneshwaran M</span> 👋
+          Hi, I&apos;m <span className="text-blue-600 dark:text-blue-400">Vigneshwaran M</span> 👋
         </h1>
         
         <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">

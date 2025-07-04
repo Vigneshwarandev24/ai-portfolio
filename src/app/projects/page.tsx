@@ -9,7 +9,7 @@ export default function ProjectsPage() {
             My Projects
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Here are some of the projects I've built using modern technologies and best practices.
+            Here are some of the projects I&apos;ve built using modern technologies and best practices.
           </p>
         </div>
         

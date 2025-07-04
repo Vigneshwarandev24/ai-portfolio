@@ -64,7 +64,7 @@ export default function ChatPage() {
       console.error("Chat error:", error);
       
       // Provide more specific error messages
-      let errorMessage = "Sorry, I'm having trouble connecting right now. Please try again later.";
+      let errorMessage = "Sorry, I&apos;m having trouble connecting right now. Please try again later.";
       
       if (error instanceof Error) {
         if (error.message.includes("API key")) {
@@ -104,7 +104,7 @@ export default function ChatPage() {
             🤖 AI Assistant
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300">
-            Ask me anything about Vigneshwaran's skills, projects, or career!
+            Ask me anything about Vigneshwaran&apos;s skills, projects, or career!
           </p>
         </div>
 
@@ -168,7 +168,7 @@ export default function ChatPage() {
             </div>
             
             <div className="mt-3 text-sm text-gray-500 dark:text-gray-400 text-center">
-              💡 Try asking: "What are your technical skills?" or "Tell me about your projects"
+              💡 Try asking: &ldquo;What are your technical skills?&rdquo; or &ldquo;Tell me about your projects&rdquo;
             </div>
           </div>
         </div>
